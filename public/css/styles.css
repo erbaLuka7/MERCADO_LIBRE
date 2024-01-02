@@ -1,0 +1,111 @@
+:root{
+    /*PALETA DE COLORES*/
+--amarillo:#EAC926;
+--azul: #03264C;
+--celeste: #1259c3;
+--grisOscuro: #666;
+--grisClaro: #ebebeb;
+--verde: #39b54a;
+    /*TIPOGRAFIAS*/
+
+    /*TAMAÑOS TIPOGRAFICOS*/
+    --cuerpoTexto: 12px;
+    --titulares:24px;
+    --precios:18px;
+    --descuentos:16px;
+    --descripciones:16px;
+}
+
+/*color:var(--amarillo)*/
+body{
+    margin:0
+}
+img{
+    max-width: 100%;
+}
+header{
+    background-color: var(--amarillo);
+    width: 100%;
+
+
+}
+.logo{
+    width: 150px; 
+    height: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.barraBusqueda{
+    background-color: var(--grisClaro);
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    border: solid 1px var(--grisOscuro);
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: var(--grisOscuro);
+    margin-bottom:0;
+}
+#lupa{
+    margin-left: 20px;
+    background-color: var(--grisClaro);
+    border: solid 1px var(--grisOscuro);
+}
+.tarjetaCredito{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+}
+.fa-hand-holding-usd {
+    margin-left: 50px; 
+}
+header ul{
+    list-style-type:none;
+    padding-left: 0;
+    font-family: 'Roboto';
+    font-weight: bold;
+} 
+header ul li a {
+    text-decoration: none;
+    color:black;
+}
+.burger-menu {
+    display: flex; 
+    justify-content: center; 
+    padding-bottom: 20px;
+}
+.burger-menu i {
+    font-size: 24px;
+    background-color: var(--celeste); 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+footer {
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+footer section {
+    margin-bottom: 10px;
+}
+
+footer i {
+    font-size: 2em; 
+    margin-bottom: 10px;
+    color:var(--celeste);
+}
+footer h4{
+    margin:0;
+    color: var(--grisOscuro);
+}
+footer p{
+    margin:0px 60px 60px 60px;
+    font-size: var(--cuerpoTexto);
+    color:var(--grisOscuro)
+}
+.copyright {
+    text-align: left;
+    margin-left: 20px; 
+}
