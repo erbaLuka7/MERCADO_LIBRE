@@ -18,7 +18,12 @@
 
 /*color:var(--amarillo)*/
 body{
-    margin:0
+    margin:0;
+    background-color: var(--grisClaro);
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 img{
     max-width: 100%;
@@ -60,14 +65,10 @@ header{
     margin-left: 50px; 
 }
 header ul{
-    list-style-type:none;
-    padding-left: 0;
-    font-family: 'Roboto';
-    font-weight: bold;
+    display: none;
 } 
 header ul li a {
-    text-decoration: none;
-    color:black;
+    display: none;
 }
 .burger-menu {
     display: flex; 
@@ -81,6 +82,41 @@ header ul li a {
     padding: 10px; 
     border-radius: 5px; 
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+}
+article{
+    margin-bottom: 10px;
+    background-color: white;
+}
+.envio{
+    border: 1px solid var(--grisClaro);
+    padding: 15px;
+}
+.fa-truck{
+    color: var(--verde);
+    padding: 5px 15px 15px 5px;
+    border: 1px solid var(--verde);
+    border-radius: 50px;
+}
+h5{
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+.tipoProd{
+    display: none;
+}
+.porcentaje{
+    color: var(--verde);
+}
+
+
+
 
 footer {
     font-family: 'Roboto';
@@ -108,4 +144,60 @@ footer p{
 .copyright {
     text-align: left;
     margin-left: 20px; 
+}
+
+@media (min-width: 361px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .tipoProd{
+        display: block;
+        margin-top:20px;
+        font-size: 16px;
+        color: var(--grisOscuro);
+        font-weight: 500;
+    }
+    header ul{
+        display: block;
+        list-style-type:none;
+        padding-left: 0;
+        font-family: 'Roboto';
+        font-weight: bold;
+    } 
+    header ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color:black;
+    }
+    .burger-menu i{
+        display: none;
+    }
+}
+@media (min-width: 769px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .tipoProd{
+        display: block;
+        margin-top:20px;
+        font-size: 16px;
+        color: var(--grisOscuro);
+        font-weight: 500;
+    }
+    header ul{
+        display: block;
+        list-style-type:none;
+        padding-left: 0;
+        font-family: 'Roboto';
+        font-weight: bold;
+    } 
+    header ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color:black;
+    }
+    .burger-menu i{
+        display: none;
+    }
+
 }
