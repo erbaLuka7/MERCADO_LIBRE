@@ -1,0 +1,131 @@
+*{
+    max-width: 100%;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background-color:white;
+    padding: 15px;
+}
+main{
+    width: 100%;
+    background-color: var(--grisClaro);
+    padding: 10px;
+}
+.labelSelector{
+    display: block;
+    font-size: 14px;
+    color: var(--grisOscuro);
+}
+.tituloInputRegister{
+
+display: block;
+
+font-weight: 600;
+
+color: var(--grisOscuro);
+
+margin: 10px 0 5px;
+
+font-size: 15px;
+}
+.barraInput{
+    
+height: 30px;
+    
+width: 100%;
+    
+border: 1px solid var(--grisOscuro);
+    
+border-radius: 10px;
+    
+padding: 10px;
+}
+.divBotones{
+    
+    margin: 20px 0;
+    
+    display: flex;
+    
+    justify-content: end;
+    
+    gap: 10px;
+}
+.botonEnviarRegister{
+    text-decoration: none;
+    color: var(--grisOscuro);
+    background-color: var(--amarillo);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--grisOscuro);
+    transition: all 0.3s;
+}
+.botonEnviarRegister:hover{
+    background-color: var(--celeste); 
+    color: var(--grisClaro);
+}
+.limpiar{
+    border: none;
+    background-color: var(--grisOscuro);
+    color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.limpiar:hover{
+    background-color: var(--grisClaro);
+    color: var(--grisOscuro);
+}
+.divLogo{
+
+display: flex;
+
+justify-content: center;
+
+margin: 15px 0;
+}
+.logoRegister{
+    width: 150px;
+    background-color: var(--amarillo);
+    padding: 6px 0;
+    border-radius: 50%;
+    border: 2px solid var(--grisOscuro);
+}
+.h5Register{
+
+font-size: 14px;
+
+color: var(--grisOscuro);
+}
+.h5Register a{color: var(--amarillo);}
+
+/*TABLET*/
+@media (min-width: 361px){
+    .divPrincipalRegister{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .divPrincipalRegister form{
+        width: 100%;
+    }
+    .divInputs1{
+        display: inline-block;
+        width: 49%;
+    }
+    .divDomivilio{
+    width: 100%;
+    }
+    .h5Register{
+        width: 100%;
+    }
+    .divBotones{
+        margin-left: auto;
+    }
+}
+/* DESKTOP */
+@media (min-width: 769px){
+    body{
+        padding: 0 20%;
+    }
+}

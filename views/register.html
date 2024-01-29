@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <main>
+        <div class="divLogo">
+            <img src="/images/logoGrande.png" alt="logo" class="logoRegister">
+        </div>
+        <form action="/register" method="post">
+        <div class="divPrincipalRegister">
+            <div class="divInputs1">
+                <label class="tituloInputRegister" for="nombre">Nombre completo</label>
+                <input class="barraInput" type="text" name="nombre" value="" id="nombre" placeholder="Nombre Completo">
+                <span class="feedback"></span>
+            </div>
+            <div class="divInputs1">
+                <label class="tituloInputRegister" for="usuario">Nombre de usuario</label>
+                <input class="barraInput" type="text" name="usuario" value="" id="usuario" placeholder="Nombre de usuario">
+                <span class="feedback"></span>
+            </div>
+            <div class="divInputs1">
+                <label class="tituloInputRegister" for="correo">Email</label>
+                <input class="barraInput" type="email" name="email" value="" id="correo" placeholder="Email">
+                <span class="feedback"></span>
+            </div>
+            <div class="divInputs1">
+                <label class="tituloInputRegister" for="nacimiento">Fecha de nacimiento</label>
+                <input class="barraInput" type="date" name="fechaNacimiento" id="nacimiento">
+                <span class="feedback"></span>
+            </div>
+            <div class="divDomivilio">
+                <label class="tituloInputRegister" for="domicilio">Domicilio</label>
+                <input class="barraInput" type="text" name="domicilio" value="" id="domicilio" placeholder="Domicilio">
+                <span class="feedback"></span>
+            </div>
+            <div class="divPerfil">
+                <label class="tituloInputRegister" for="perfil">Perfil de usuario</label>
+                <label class="labelSelector" for="">
+                    <input type="radio" name="perfil" value="comprador"> Comprador
+                </label>
+                <label class="labelSelector" for="">
+                    <input type="radio" name="perfil" value="vendedor"> Vendedor
+                </label>
+            </div>
+            <div class="divIntereses">
+                <label class="tituloInputRegister" for="">Intereses</label>
+                <label class="labelSelector" for="">
+                    <input type="checkbox" name="intereses" value="electro"> Electro
+                </label>
+            <label class="labelSelector" for="">
+                <input type="checkbox" name="intereses" value="moda"> Moda
+            </label>
+            <label class="labelSelector" for="">
+                <input type="checkbox" name="intereses" value="hogar"> Hogar
+            </label>
+            <label class="labelSelector" for="">
+                <input type="checkbox" name="intereses" value="jugueteria"> Juguetería
+            </label>
+            <label class="labelSelector" for="">
+                <input type="checkbox" name="intereses" value="vidaSana"> Vida sana
+            </label>
+        </div>
+        <div class="divFotoPerfil">
+            <label class="tituloInputRegister" for="foto">Foto de perfil</label>
+            <input type="file" name="foto" id="foto" accept=".jpg, .png">
+        </div>
+        <div class="divInputs1">
+            <label class="tituloInputRegister" for="contrasena">Contraseña</label>
+            <input class="barraInput" type="password" name="contrasena" value="" id="contrasena" placeholder="Contraseña">
+            <span class="feedback"></span>
+        </div>
+        <div class="divInputs1">
+            <label class="tituloInputRegister" for="confContrasena">Confirmar contraseña</label>
+            <input class="barraInput" type="password" name="confContrasena" value="" id="confContrasena" placeholder="Confrimar contraseña">
+            <span class="feedback"></span>
+        </div>
+        <div class="divBotones">
+            <a class="botonEnviarRegister" href="/">Enviar</a>
+            <button class="limpiar" type="reset">Limpiar datos</button>
+        </div>
+        <h5 class="h5Register">Ya tenés cuenta? <a href="/login"> Ingresá</a></h5>
+    </div>
+</form>
+    </main>
+</body>
+</html>
