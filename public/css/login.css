@@ -1,0 +1,54 @@
+*{
+    max-width: 100%;
+    font-family: 'Work Sans', sans-serif;
+}
+.bodyLogin{
+    background-color: var(--grisClaro);
+}
+.divBotonLogin{
+    
+margin: 15px 0;
+    
+display: flex;
+    
+justify-content: center;
+}
+.botonEnviaLogin{
+    background-color: var(--celeste);
+    color: var(--grisClaro);
+    text-decoration: none;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.5s;
+}
+.botonCrearLogin{
+    padding: 10px 0;
+    background-color: white;
+    color: var(
+    --celeste);
+    text-decoration: none;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+}
+.botonCrearLogin:hover{
+    background-color: var(--celeste);
+    color: white;
+}
+.botonEnviaLogin:hover{
+    background-color: white;
+    color: var(--celeste);
+}
+@media(min-width:361px){
+    .bodyLogin{
+        padding: 10%;
+    }
+}
+@media(min-width:769px){
+    .bodyLogin{
+        padding: 10% 30%;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body class="bodyLogin">
+    <main>
+        <div class="divLogo">
+            <img src="/images/logoGrande.png" alt="logo" class="logoRegister">
+        </div>
+        <form action="/login" method="post">
+            <div>
+                <label class="tituloInputRegister" for="usuario">Nombre de usuario</label>
+                <input class="barraInput" type="text" name="usuario" value="" id="usuario" placeholder="Nombre de usuario">
+                <span class="feedback"></span>
+            </div>
+            <div>
+                <label class="tituloInputRegister" for="contrasena">Contraseña</label>
+                <input class="barraInput" type="password" name="contrasena" value="" id="contrasena" placeholder="Contraseña">
+                <span class="feedback"></span>
+            </div>
+            <div class="divBotonLogin">
+                <a class="botonEnviaLogin" href="/">Enviar</a>
+            </div>
+            <div class="divBotonLogin">
+                <a class="botonCrearLogin" href="/register">Crear cuenta</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
