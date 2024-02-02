@@ -26,7 +26,7 @@ justify-content: center;
 }
 .botonCrearLogin{
     padding: 10px 0;
-    background-color: white;
+    background-color: var(--blanco);
     color: var(
     --celeste);
     text-decoration: none;
@@ -37,11 +37,11 @@ justify-content: center;
 }
 .botonCrearLogin:hover{
     background-color: var(--celeste);
-    color: white;
+    color: var(--blanco);
 }
 .enviarLogin:hover{
-    background-color: white;
-    color: var(--celeste);
+    background-color: #0022AA;
+    color: var(--blanco);
 }
 @media(min-width:361px){
     .bodyLogin{

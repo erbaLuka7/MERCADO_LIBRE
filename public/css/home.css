@@ -3,6 +3,10 @@
     padding: 5px 15px 15px 5px;
     border: 1px solid var(--verde);
     border-radius: 50px;
+    transition: all 0.7s;
+}
+.fa-truck:hover{
+    transform: rotate(-90deg);
 }
 
 main section article i{
@@ -89,7 +93,7 @@ header ul li a {
 .burger-menu i {
     font-size: 24px;
     background-color: var(--celeste); 
-    color: white; 
+    color: var(--blanco); 
     padding: 10px; 
     border-radius: 5px; 
 }
@@ -102,7 +106,7 @@ main {
 }
 article{
     margin-bottom: 10px;
-    background-color: white;
+    background-color: var(--blanco);
 }
 .envio{
     position: relative;
@@ -189,6 +193,9 @@ footer p{
     color: var(--grisOscuro);
     margin: 18px 0;
 }
+.copyright h5{
+    font-size: 12px;
+}
 /* TABLET */
 @media (min-width: 361px){
     main img{
@@ -202,16 +209,23 @@ footer p{
         flex-wrap: wrap;
     }
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 49%;
         display: inline-block;
+        transition: all 0.5s;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .tipoProd{
         display: block;
         margin-top:20px;
         font-size: 16px;
-        color: var(--grisOscuro);
+        color: var(--blanco);
         font-weight: 500;
+        transition: all 0.5s;
+    }
+    .tipoProd:hover{
+        color: var(--grisOscuro)
     }
     header{
         display: flex;
@@ -271,7 +285,7 @@ footer p{
 }
 .Lupa{
     position: relative;
-    background-color: white;
+    background-color: var(--blanco);
     border: none;
     border-radius: 5px;
     right: 15px;
@@ -289,16 +303,23 @@ footer p{
         max-width: 100%;
     }
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 22%;
         display: inline-block;
+        transition: all 0.5s;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .tipoProd{
         display: block;
         margin-top:20px;
         font-size: 16px;
-        color: var(--grisOscuro);
+        color: var(--blanco);
         font-weight: 500;
+        transition: all 0.5s;
+    }
+    .tipoProd:hover{
+        color: var(--grisOscuro)
     }
     .divUL{
         display: flex;
@@ -334,5 +355,11 @@ footer p{
     main{
         display: flex;
     }
-
+    .divFooter{
+        display: flex;
+        padding-top: 10px;
+    }
+    .iconFooter:hover{
+        color:var(--grisOscuro) ;
+    }
 }
