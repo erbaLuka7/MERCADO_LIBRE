@@ -38,8 +38,12 @@ header{
     background-color: var(--amarillo);
     width: 100%;
 }
+.aLogo{
+    width: 100%;
+    height: auto;
+}
 .logo{
-    width: 50%;
+    width: 100%;
     height: auto;
     /* padding-top: 30px; */
     /* padding-left: 30px; */
@@ -208,12 +212,12 @@ footer p{
         max-width: 100%;
         flex-wrap: wrap;
     }
-    article{
+    .articleHome{
         width: 49%;
         display: inline-block;
         transition: all 0.5s;
     }
-    article:hover{
+    .articleHome:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .tipoProd{
@@ -302,12 +306,12 @@ footer p{
         justify-content: space-between;
         max-width: 100%;
     }
-    article{
+    .articleHome{
         width: 22%;
         display: inline-block;
         transition: all 0.5s;
     }
-    article:hover{
+    .articleHome:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .tipoProd{

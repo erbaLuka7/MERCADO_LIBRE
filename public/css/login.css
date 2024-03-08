@@ -44,12 +44,13 @@ justify-content: center;
     color: var(--blanco);
 }
 @media(min-width:361px){
-    .bodyLogin{
+    .mainLogin{
         padding: 10%;
     }
 }
 @media(min-width:769px){
-    .bodyLogin{
+    .mainLogin{
         padding: 10% 30%;
     }
+
 }

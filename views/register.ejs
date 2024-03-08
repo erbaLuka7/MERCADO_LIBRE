@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registro</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-</head>
+    <%- include ("./partials/head", {title:"Registrarse", bootstrapActive: false, appcssActive: false}) %>
 <body class="bodyRegister">
-    <main>
+    <%-include ("./partials/header")%>
+    <main class="mainRegister">
         <div class="divLogo">
             <img src="/images/logoGrande.png" alt="logo" class="logoRegister">
         </div>
@@ -84,9 +79,10 @@
             <button class="enviarRegister" type="submit">Enviar</button>
             <button class="limpiar" type="reset">Limpiar datos</button>
         </div>
-        <h5 class="h5Register">Ya tenés cuenta? <a href="/login"> Ingresá</a></h5>
+        <h5 class="h5Register">Ya tenés cuenta? <a href="/authentication/loguearse"> Ingresá</a></h5>
     </div>
 </form>
     </main>
+    <%-include ("./partials/footer")%>
 </body>
 </html>

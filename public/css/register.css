@@ -2,7 +2,7 @@
     max-width: 100%;
     font-family: 'Work Sans', sans-serif;
 }
-body{
+.bodyRegister{
     background-color:white;
 }
 main{
@@ -125,7 +125,8 @@ color: var(--grisOscuro);
 }
 /* DESKTOP */
 @media (min-width: 769px){
-    .bodyRegister{
+    .mainRegister{
         padding: 0 20%;
+        margin-bottom: 10px;
     }
 }
